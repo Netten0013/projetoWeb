@@ -1,111 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .kanit-thin {
-  font-family: "Kanit", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .kanit-extralight {
-  font-family: "Kanit", sans-serif;
-  font-weight: 200;
-  font-style: normal;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .kanit-light {
-  font-family: "Kanit", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .kanit-regular {
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .kanit-medium {
-  font-family: "Kanit", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .kanit-semibold {
-  font-family: "Kanit", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .kanit-bold {
-  font-family: "Kanit", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .kanit-extrabold {
-  font-family: "Kanit", sans-serif;
-  font-weight: 800;
-  font-style: normal;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .kanit-black {
-  font-family: "Kanit", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .kanit-thin-italic {
-  font-family: "Kanit", sans-serif;
-  font-weight: 100;
-  font-style: italic;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: italic;
 }
 
 .kanit-extralight-italic {
-  font-family: "Kanit", sans-serif;
-  font-weight: 200;
-  font-style: italic;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: italic;
 }
 
 .kanit-light-italic {
-  font-family: "Kanit", sans-serif;
-  font-weight: 300;
-  font-style: italic;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .kanit-regular-italic {
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .kanit-medium-italic {
-  font-family: "Kanit", sans-serif;
-  font-weight: 500;
-  font-style: italic;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .kanit-semibold-italic {
-  font-family: "Kanit", sans-serif;
-  font-weight: 600;
-  font-style: italic;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
 }
 
 .kanit-bold-italic {
-  font-family: "Kanit", sans-serif;
-  font-weight: 700;
-  font-style: italic;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .kanit-extrabold-italic {
-  font-family: "Kanit", sans-serif;
-  font-weight: 800;
-  font-style: italic;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: italic;
 }
 
 .kanit-black-italic {
-  font-family: "Kanit", sans-serif;
-  font-weight: 900;
-  font-style: italic;
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }
 
 
@@ -115,7 +115,7 @@ html, body {
 }
 
 body {
-    font-family: 'MinhaFonte', sans-serif;
+    font-family: 'Kanit', sans-serif;
 }
 
 :root{
@@ -142,16 +142,20 @@ body{
     overflow-x: hidden;
 }
 
-.header {
+.header { 
     position: fixed;
-    top: 0; 
+    padding-top: 1%; 
+    padding-bottom: 1%; 
     left: 0;
     width: 100%;
     z-index: 1000; 
- 
+    background-color: transparent;
+}
+.header.scrolled {
+    background-color: black;
 }
 
-.navContent{
+.conteudo-nav{ 
     display: flex;
     flex-direction: row;
     margin-left: 5%;
@@ -159,17 +163,17 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.navContent > img{
+.conteudo-nav > img{
     width: 10%;
 }
-.navbar{
+.barra-nav{ 
     display: flex;
     position: relative;
     justify-content: center;
     gap: 30%;
 
 }
-.navbar > a{
+.barra-nav > a{
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -178,52 +182,364 @@ body{
     
 
 }
-.navbar>a:hover{
+.barra-nav > a:hover{
     color: var(--secondaryDarkColor);
 }
 
 
-.main-container{
+.container-principal{ 
     width: 100%;
 }
-.hero-container{
+.container-hero{ 
     object-fit: fill;
+    position: relative; 
+    width: 100%; 
+    height: 100vh; 
 }
+
+.container-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); 
+    z-index: 1; 
+}
+
 #imgHero{
     width: 100%;
     object-fit: cover;
-    height: 70vh;
-    
-
+    height: 100%; 
+    position: relative; 
+    z-index: 0;
 }
 
 #cards-container{
-    margin-top: 20%;
+    margin-top: 2%;
     justify-self: center;
+    text-align: center; 
 }
-.card-artwork {
-    border-radius: 18px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    background-color: var(--secondaryColor); 
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
-    max-width: 260px; 
+
+.card-carro {
+    background-color: var(--blackColor); 
+    border: 1px solid var(--secondaryColor);
+    border-radius: 10px; 
+    padding: 0; 
+    margin: 30px;
+    max-width: 370px; 
     display: inline-block;
     vertical-align: top;
-    color: var(--mainTextColor);
-    transition: transform 0.3s ease-in-out;
+    text-align: left; 
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 40, 40, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--whiteColor);
 }
 
-.card-artwork:hover {
-    transform: translateY(-5px);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+.card-carro:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 20px rgba(255, 40, 40, 0.4);
 }
 
-.card-artwork-image {
+/* --- Imagem do Carro --- */
+.imagem-card-carro { 
     width: 100%;
-    height: 300px;
+    height: 200px; 
+    object-fit: cover; 
+    mask-image: linear-gradient(to bottom, black 90%, transparent 100%); 
+}
+
+/* --- Área de Conteúdo --- */
+.info-card-carro { 
+    padding: 15px;
+}
+
+/* --- Modelo do Carro (Título) --- */
+.modelo-card-carro { 
+    color: var(--tertiaryColor); 
+    font-size: 1.6em;
+    text-align: center;
+    margin: 5px 0 5px 0;
+    text-transform: uppercase;
+}
+
+/* --- Descrição/Detalhes --- */
+.detalhes-card-carro { 
+    color: var(--tertiaryDarkColor); 
+    font-size: 1em;
+    margin-bottom: 15px;
+    min-height: 40px;
+}
+
+/* --- Especificações (Ano, etc.) --- */
+.specs-card-carro { 
+    margin-bottom: 10px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ano-card-carro {
+    color: var(--tertiaryDarkColor);
+    font-size: 0.9em;
+}
+
+/* --- Preço --- */
+.preco-card-carro { 
+    color: var(--secondaryDarkColor); 
+    font-size: 2em;
+    font-weight: 700;
+    margin: 10px 0 20px 0;
+}
+
+/* --- Botão de Ação --- */
+.botao-card-carro { 
+    width: 100%;
+    background-color: var(--secondaryColor); 
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 0;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 0 var(--secondaryDarkColor); 
+}
+
+.botao-card-carro:hover {
+    background-color: var(--secondaryDarkColor); 
+}
+
+.botao-card-carro:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 var(--secondaryDarkColor); 
+}
+
+/* Cards e Títulos */
+.secao-cards, 
+.secao-sobre { 
+    padding: 40px 5%; 
+    text-align: center;
+}
+
+.titulo-secao { 
+    font-family: "Kanit", sans-serif;
+    font-weight: 700; 
+    font-size: 2.5em;
+    color: var(--secondaryDarkColor); 
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+/* Sobre */
+.secao-sobre { 
+    background-color: var(--primaryDarkColor); 
+    color: var(--mainTextColor); 
+    padding: 60px 10%;
+    margin-top: 50px;
+}
+
+.conteudo-sobre p { 
+    font-family: "Kanit", sans-serif;
+    font-weight: 300; 
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #000000;
+}
+
+/* POP UP */
+.modal-oculto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000; 
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none; 
+}
+
+.modal-visivel {
+    display: flex !important; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.9);
+    z-index: 2000;
+}
+
+@keyframes modal-abrir {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.conteudo-modal {
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+    padding: 30px 20px; 
+    border: 1px solid var(--secondaryDarkColor);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+
+    max-height: 85vh;       
+    
+    box-shadow: 0 5px 15px rgba(255, 40, 40, 0.4);
+    animation: modal-abrir 0.3s ease-out;
+}
+
+
+.fechar-modal {
+    color: var(--secondaryDarkColor);
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.fechar-modal:hover,
+.fechar-modal:focus {
+    color: var(--primaryDarkColor);
+}
+
+.imagem-modal {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.titulo-modal {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: var(--secondaryDarkColor);
+    margin-bottom: 5px;
+}
+
+.preco-modal {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    color: var(--tertiaryColor);
+    margin-bottom: 5px;
+}
+
+.modal-especificacoes {
+    font-family: "Kanit", sans-serif;
+    color: var(--tertiaryDarkColor);
+    font-size: 1em;
+}
+
+.detalhes-modal {
+    font-family: "Kanit", sans-serif;
+    font-size: 1.1em;
+    color: var(--tertiaryDarkColor);
+    margin-top: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 5px;
+}
+
+.botao-modal-compra {
+    width: 100%; 
+    background-color: var(--secondaryColor); 
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+}
+
+.botao-modal-compra:hover {
+    background-color: var(--secondaryDarkColor);
+}
+.conteudo-modal img {
+    width: 100%;          
+    max-width: 630px;     
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;  
+    border-radius: 8px;   
+}
+
+.conteudo-modal h2,
+.conteudo-modal h3 {
+    margin-bottom: 12px;      
+    line-height: 1.3;
+}
+
+.conteudo-modal p {
+    margin-bottom: 18px;      
+    line-height: 1.6;         
+}
+
+.conteudo-modal ul,
+.conteudo-modal li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Footer */
+.rodape {
+    background-color: #222; 
+    color: white; 
+    padding: 20px 0; 
+    width: 100%;
+}
+
+.rodape-conteudo {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    text-align: center;
+    gap: 55%;
+}
+
+.rodape-conteudo p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
     
 }
+
+.rodape-links {
+    display: flex;
+    gap: 10px; 
+}
+
+.rodape-links a {
+    color: #ccc; 
+    text-decoration: none; 
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.rodape-links a:hover {
+    color: var(--secondaryDarkColor, #007bff); 
+}
+
+.separador {
+    color: #555;
+    font-size: 0.9em;
+}
+
