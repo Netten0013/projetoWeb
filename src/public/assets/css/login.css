@@ -1,0 +1,129 @@
+@import url('./main.css');
+
+
+
+.login-body {
+    background: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+
+.login-container {
+    background-color: var(--blackColor);
+    border-radius: 14px;
+    border: 1.5px solid var(--secondaryDarkColor);
+    box-shadow: 0 0 35px rgba(255, 40, 40, 0.35);
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    padding: 40px 35px;
+    animation: fadeIn 0.55s ease-out;
+    transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+    transform: translateY(-3px);
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.login-container .titulo-secao {
+    margin-bottom: 28px;
+    font-size: 2.1em;
+    font-weight: 600;
+    color: var(--whiteColor);
+    letter-spacing: 1px;
+}
+
+
+.form-group {
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+.login-label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--tertiaryColor);
+    font-weight: 500;
+    font-size: 1.05em;
+    letter-spacing: 0.5px;
+}
+
+
+.login-input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 6px;
+    background-color: #111;
+    color: var(--whiteColor);
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.login-input:focus {
+    border-color: var(--secondaryDarkColor);
+    box-shadow: 0 0 10px rgba(255, 40, 40, 0.55);
+    outline: none;
+}
+
+.login-input::placeholder {
+    color: var(--grayColor);
+    opacity: 0.8;
+}
+
+
+.login-button {
+    margin-top: 30px;
+    padding: 15px 0;
+    width: 100%;
+    font-size: 1.25em;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+}
+
+
+.recuperar-senha {
+    margin-top: 22px;
+    font-size: 0.95em;
+}
+
+.recuperar-senha a {
+    color: var(--secondaryColor);
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.recuperar-senha a:hover {
+    color: var(--secondaryDarkColor);
+    text-shadow: 0 0 8px rgba(255, 40, 40, 0.4);
+    text-decoration: underline;
+}

@@ -1,22 +1,22 @@
-import CardCarro from "/src/public/assets/js/components/cardComponent.js";
+import CardCarro from "/projetoWeb/src/public/assets/js/components/cardComponent.js";
 
 const infoCardCarros = [
     {
-        image: "/src/public/assets/img/bmw.jpg",
+        image: "/projetoWeb/src/public/assets/img/bmw.jpg",
         modelo: "BMW M4 Competition",
         preco: "R$ 950.000",
         ano: 2024,
         detalhes: "Motor TwinPower Turbo de 510cv. Cor Vermelho Vibrante, com teto em fibra de carbono."
     },
     {
-        image: "/src/public/assets/img/mustang.png",
+        image: "/projetoWeb/src/public/assets/img/mustang.png",
         modelo: "Mustang Hardtop",
         preco: "R$ 280.000",
         ano: 1967,
         detalhes: "Clássico americano restaurado com motor V8."
     },
     {
-        image: "/src/public/assets/img/corvett.jpg",
+        image: "/projetoWeb/src/public/assets/img/corvett.jpg",
         modelo: "Corvette Stingray C7",
         preco: "R$ 750.000",
         ano: 2019,

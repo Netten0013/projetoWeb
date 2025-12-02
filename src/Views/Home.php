@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../public/assets/img/Bicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../public/assets/css/main.css">
-    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <link rel="shortcut icon" href="/projetoWeb/src/public/assets/img/Bicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/projetoWeb/src/public/assets/css/main.css">
     <title>BimmerStore</title>
 </head>
 <body>
-    <header class="header"> <div class="conteudo-nav"> <img src="/src/public/assets/img/logobimmer.png" alt="">
+    <header class="header"> <div class="conteudo-nav"> <img src="/projetoWeb/src/public/assets/img/logobimmer.png" alt="">
                 <nav class="barra-nav"> 
                 <a href="#cards-container">Cars</a>
                 <a href="#sobre-nos">About</a>
@@ -20,7 +19,7 @@
     </header>
     <main>
         <div class="container-principal"> 
-            <div class="container-hero"> <img src="/src/public/assets/img/bmwhero.jpg" alt="" id="imgHero"></div> 
+            <div class="container-hero"> <img src="/projetoWeb/src/public/assets/img/bmwhero.jpg" alt="" id="imgHero"></div> 
             
             <section class="secao-cards"> 
                 <h2 class="titulo-secao">Nossos Destaques</h2> 
@@ -73,6 +72,6 @@
         </div>
     </div>
     
-    <script type="module" src="/src/public/assets/js/script.js"></script>
+    <script type="module" src="/projetoWeb/src/public/assets/js/script.js"></script>
 </body>
 </html>

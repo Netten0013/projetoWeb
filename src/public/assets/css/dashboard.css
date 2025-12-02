@@ -1,0 +1,230 @@
+@import url(./main.css);
+
+/* --------------------------------------------- */
+/* BASE */
+/* --------------------------------------------- */
+.dashboard-body {
+    background: #0f0f0f;
+    padding-top: 60px;
+    color: var(--whiteColor);
+    min-height: 100vh;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* --------------------------------------------- */
+/* TOPBAR */
+/* --------------------------------------------- */
+.topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: var(--blackColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    box-shadow: 0 0 10px rgba(255, 40, 40, 0.2);
+    z-index: 10;
+}
+
+.topbar .avatar {
+    border-radius: 50%;
+}
+
+/* --------------------------------------------- */
+/* LAYOUT */
+/* --------------------------------------------- */
+.dashboard-main-container {
+    display: flex;
+}
+
+/* --------------------------------------------- */
+/* SIDEBAR */
+/* --------------------------------------------- */
+.sidebar {
+    width: 250px;
+    background: var(--blackColor);
+    padding: 20px 0;
+    height: calc(100vh - 60px);
+    position: sticky;
+    top: 60px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
+}
+
+.sidebar .logo {
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 25px;
+    color: var(--secondaryDarkColor);
+}
+
+.menu-item {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: var(--tertiaryDarkColor);
+    font-size: 1.1em;
+    transition: 0.2s;
+    border-left: 4px solid transparent;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background: #1a1a1a;
+    color: var(--secondaryDarkColor);
+    border-left-color: var(--secondaryDarkColor);
+}
+
+/* --------------------------------------------- */
+/* CONTEÚDO */
+/* --------------------------------------------- */
+.dashboard-content {
+    flex-grow: 1;
+    padding: 40px;
+}
+
+/* TITULOS */
+.dashboard-titulo {
+    margin-bottom: 20px;
+    font-size: 2.6em;
+}
+
+.secao-subtitulo {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: var(--secondaryDarkColor);
+}
+
+/* --------------------------------------------- */
+/* CARDS */
+/* --------------------------------------------- */
+.summary-cards-container {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.summary-card {
+    flex: 1;
+    background: #141414;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid rgba(255, 40, 40, 0.3);
+    box-shadow: 0 5px 15px rgba(255, 40, 40, 0.15);
+    transition: 0.3s;
+}
+
+.summary-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(255, 40, 40, 0.4);
+}
+
+.summary-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: var(--secondaryDarkColor);
+}
+
+.summary-value {
+    font-size: 3.2em;
+    font-weight: bold;
+}
+
+.summary-label {
+    color: var(--tertiaryDarkColor);
+    margin-bottom: 10px;
+}
+
+.summary-link {
+    color: var(--secondaryColor);
+    font-size: 0.95em;
+    text-decoration: none;
+}
+
+.summary-link:hover {
+    color: var(--secondaryDarkColor);
+}
+
+.summary-link.disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+/* --------------------------------------------- */
+/* BOTÕES */
+/* --------------------------------------------- */
+.botao-acao {
+    background: var(--secondaryDarkColor);
+    padding: 12px 25px;
+    border-radius: 6px;
+    border: none;
+    color: var(--whiteColor);
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.botao-acao:hover {
+    background: var(--secondaryColor);
+}
+
+/* --------------------------------------------- */
+/* TABELAS */
+/* --------------------------------------------- */
+.tabela-container {
+    overflow-x: auto;
+}
+
+.tabela-dados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabela-dados th,
+.tabela-dados td {
+    padding: 14px;
+    border-bottom: 1px solid #333;
+}
+
+.tabela-dados th {
+    background: #1a1a1a;
+    color: var(--secondaryDarkColor);
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.tabela-dados tr:hover {
+    background: #222;
+}
+
+.action-link {
+    color: var(--secondaryColor);
+}
+
+.action-link:hover {
+    color: var(--secondaryDarkColor);
+    text-decoration: underline;
+}
+
+.action-link.delete {
+    color: #ff5555;
+}
+
+.action-link.delete:hover {
+    color: #ff2222;
+}
+
+/* --------------------------------------------- */
+/* RODAPÉ */
+/* --------------------------------------------- */
+.rodape {
+    text-align: center;
+    padding: 20px;
+    color: var(--tertiaryDarkColor);
+    font-size: 0.9em;
+}
