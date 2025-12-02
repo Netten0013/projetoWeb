@@ -11,7 +11,7 @@
     <div class="login-container">
         <h1 class="titulo-secao">Login de Acesso</h1>
         
-        <form class="login-form" method="POST" action="/projetoWeb/login">
+        <form class="login-form" method="POST" action="/projetoWeb/dashboard">
             <div class="form-group">
                 <label for="email" class="login-label">E-mail:</label>
                 <input type="text" id="email" name="email" class="login-input" placeholder="Seu e-mail ou nome de usuário" required>
